@@ -1,1 +1,1 @@
-This repository will be where I push my python exercises for codeup.# python-exercises
+This repository will be where I push my python exercises for codeup.
