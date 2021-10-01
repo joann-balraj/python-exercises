@@ -22,7 +22,7 @@ print(can_student_be_enrolled)
 purchase_amt = 3
 expired = False
 premium_member = True
-offer_applied = purchase_amt > 3 and not expired or premium_member
+offer_applied = purchase_amt >= 3 and not expired or premium_member
 print(offer_applied)
 
 # Create a variable that holds a boolean value for each of the following conditions:
