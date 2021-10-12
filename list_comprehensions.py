@@ -26,39 +26,24 @@ def count_vowels(something):
             countvs.append(letter)
     return len(countvs)
 
-fruits_with_more_than_two_vowels = []
-for fruit in fruits:
-    if count_vowels(fruit) > 2:
-        fruits_with_more_than_two_vowels.append(fruit)
+fruits_with_more_than_two_vowels = [fruit for fruit in fruits if count_vowels(fruit) > 2]
 print(fruits_with_more_than_two_vowels)
 
+
 # Exercise 4 -
-fruits_with_only_two_vowels = []
-for fruit in fruits:
-    if count_vowels(fruit) == 2:
-        fruits_with_only_two_vowels.append(fruit)
+fruits_with_only_two_vowels = [fruit for fruit in fruits if count_vowels(fruit) == 2]
 print(fruits_with_only_two_vowels)
 
 # Exercise 5 -
-more_than_five = []
-for fruit in fruits:
-    if len(fruit) > 5:
-        more_than_five.append(fruit)
+more_than_five = [fruit for fruit in fruits if len(fruit) > 5]
 print(more_than_five)
 
 # Exercise 6 -
-exactly_five = []
-for fruit in fruits:
-    if len(fruit) == 5:
-        exactly_five.append(fruit)
+exactly_five = [fruit for fruit in fruits if len(fruit) == 5]
 print(exactly_five)
 
 # Exercise 7 -
-less_than_five = []
-for fruit in fruits:
-    if len(fruit) < 5:
-        less_than_five.append(fruit)
-        print(len(fruit))
+less_than_five = [fruit for fruit in fruits if len(fruit) < 5]
 print(less_than_five)
 
 # Exercise 8 -
@@ -74,31 +59,19 @@ print(fruits_with_letter_a)
 numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 256, -8, -4, -2, 5, -9]
 
 # Exercise 10 - 
-even_numbers = []
-for number in numbers:
-    if number % 2 == 0:
-        even_numbers.append(number)
+even_numbers = [number for number in numbers if number % 2 == 0]
 print(even_numbers)
 
  # Exercise 11 - 
-odd_numbers = []
-for number in numbers:
-    if number % 2 != 0:
-        odd_numbers.append(number)
+odd_numbers = [number for number in numbers if number % 2 != 0]
 print(odd_numbers)
 
 # Exercise 12 - 
-positive_numbers = []
-for number in numbers:
-    if number > 0:
-        positive_numbers.append(number)
+positive_numbers = [number for number in numbers if number > 0]
 print(positive_numbers)
 
 # Exercise 13 - 
-negative_numbers = []
-for number in numbers:
-    if number < 0:
-        negative_numbers.append(number)
+negative_numbers = [number for number in numbers if number < 0]
 print(negative_numbers)
 
 # Exercise 14 -
